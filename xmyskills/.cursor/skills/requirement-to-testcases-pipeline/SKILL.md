@@ -18,7 +18,7 @@ description: 一次性执行从需求docx到测试用例与审计报告的全流
 
 ## 自动执行模式（强制）
 - 收到 `@xxx.docx` 后，必须由 agent 主动执行脚本，不要求用户手动运行命令
-- 默认命令：`python "d:/cursor_workspace/docx_to_md.py" "<docx绝对路径>" "<md绝对路径>"`
+- 默认命令：`python "d:/cursor_workspace/xmyskills/docx_to_md.py" "<docx绝对路径>" "<md绝对路径>"`（若仓库根路径不同，改为 `<仓库根>/xmyskills/docx_to_md.py`）
 - 若传入的是 `@xxx.md` 且结构完整，可跳过转换步骤
 
 ## 输出文件（强制）
