@@ -15,6 +15,7 @@ description: 一次性执行从需求docx到测试用例与审计报告的全流
 ## 输入
 - `@xxx.docx`（必需）
 - 可选：`@xxx.md`（若已存在可复用）
+- 可选：`@xxx-模板.md`（用于 full 与模板对齐验收）
 
 ## 自动执行模式（强制）
 - 收到 `@xxx.docx` 后，必须由 agent 主动执行脚本，不要求用户手动运行命令
@@ -34,6 +35,7 @@ description: 一次性执行从需求docx到测试用例与审计报告的全流
 2. 按 `requirement-to-testcases-core` 规则生成 `core.md`
 3. 按 `testcases-expand-coverage` 规则生成 `full.md`
 4. 按 `testcases-audit-report` 规则生成 `audit.md`
+5. 若提供模板：执行 `full vs 模板` 对比校验并输出差异清单
 
 ## 编排约束
 - 必须串行，不可并行跳步
@@ -44,6 +46,14 @@ description: 一次性执行从需求docx到测试用例与审计报告的全流
 ## 产出格式
 - 用例文档保持 XMind 友好 Markdown 层级
 - 审计报告必须含覆盖率、维度检查、参数提取、风险结论
+
+## 模板对齐模式（可选）
+- 仅对 `full.md` 与模板做结构/维度优先对齐
+- `core.md` 与 `audit.md` 仍遵循通用契约，不参与模板强比对
+- 标题覆盖率门槛（通用 QA 口径）：`##` >= 85%，`###` >= 80%
+- 维度覆盖门槛（通用 QA 口径）：关键测试维度（UI/浮层/网络/兼容）覆盖率 >= 80%
+- 编号风格差异默认记为 warning，不作为阻塞项
+
 
 ## 引用规范
 - core 规则参考：`../requirement-to-testcases-core/SKILL.md`

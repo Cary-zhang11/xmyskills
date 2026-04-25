@@ -1,6 +1,6 @@
 ---
 name: requirement-to-testcases-core
-description: 将需求文档拆分为可转XMind的Markdown核心测试用例（先产出p0/p1），严格按参考模板层级输出。用于需求拆测试用例、按模板生成测试点、XMind测试用例初稿等场景。
+description: 将需求文档拆分为可转XMind的Markdown核心测试用例（先产出p0/p1），严格按通用层级输出。用于需求拆测试用例、生成测试点、XMind测试用例初稿等场景。
 ---
 
 # Requirement To Testcases Core
@@ -15,7 +15,6 @@ description: 将需求文档拆分为可转XMind的Markdown核心测试用例（
 
 ## 输入
 - 需求文档、评审纪要、接口说明、原型说明（任一或组合）
-- 若提供模板，优先匹配模板层级和术语
 
 ## 快速使用
 1. 先将 docx 转为 md：`python docx_to_md.py "需求.docx" "需求.md"`
@@ -37,6 +36,7 @@ description: 将需求文档拆分为可转XMind的Markdown核心测试用例（
 - 格式：`tc-p0-001`、`tc-p1-001`
 - 在同一 `### 二级功能块` 内按优先级独立递增
 - 不允许重复编号
+- 若后续 full 开启模板对齐并采用短编号，core 仍保持本规则，不强制跟随模板
 
 ## 核心流程
 1. 提取功能块（按可测目标拆成 `###`）
@@ -51,10 +51,9 @@ description: 将需求文档拆分为可转XMind的Markdown核心测试用例（
 ## 禁止项
 - 不输出 p2/p3（交由扩展技能处理）
 - 不输出完整性检查报告（交由审计技能处理）
-- 不使用表格，不改写用户模板层级
+- 不使用表格
 
 ## 附件
-- 统一模板见 [templates.md](templates.md)
 - 触发词建议见 [trigger-phrases.md](trigger-phrases.md)
 - 迁移映射见 [migration-map.md](migration-map.md)
 - 公共风格约束见 [../_shared/testcase-style.md](../_shared/testcase-style.md)
