@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python \"d:\\\\cursor_workspace\\\\xmyskills\\\\validate_pipeline_outputs.py\" --core \"d:\\\\cursor_workspace\\\\xmyskills\\\\估值页兼容+CPS+模式测试用例-core.md\" --full \"d:\\\\cursor_workspace\\\\xmyskills\\\\估值页兼容+CPS+模式测试用例-full.md\" --audit \"d:\\\\cursor_workspace\\\\xmyskills\\\\估值页兼容+CPS+模式测试用例-audit.md\" --template \"d:\\\\cursor_workspace\\\\xmyskills\\\\估值页兼容+CPS+模式测试用例-模板.md\")",
+      "Bash(chcp 65001)",
+      "Bash(PYTHONIOENCODING=utf-8 python \"d:\\\\cursor_workspace\\\\xmyskills\\\\validate_pipeline_outputs.py\" --core \"d:\\\\cursor_workspace\\\\xmyskills\\\\估值页兼容+CPS+模式测试用例-core.md\" --full \"d:\\\\cursor_workspace\\\\xmyskills\\\\估值页兼容+CPS+模式测试用例-full.md\" --audit \"d:\\\\cursor_workspace\\\\xmyskills\\\\估值页兼容+CPS+模式测试用例-audit.md\" --template \"d:\\\\cursor_workspace\\\\xmyskills\\\\估值页兼容+CPS+模式测试用例-模板.md\")",
+      "Bash(python \"d:\\\\cursor_workspace\\\\xmyskills\\\\docx_to_md.py\" \"D:\\\\cursor_workspace\\\\xmyskills\\\\估值页兼容+CPS+模式.docx\" \"D:\\\\cursor_workspace\\\\xmyskills\\\\估值页兼容+CPS+模式.md\")",
+      "Bash(python \"D:\\\\cursor_workspace\\\\xmyskills\\\\validate_pipeline_outputs.py\" --core \"D:\\\\cursor_workspace\\\\xmyskills\\\\估值页兼容+CPS+模式测试用例-core.md\" --full \"D:\\\\cursor_workspace\\\\xmyskills\\\\估值页兼容+CPS+模式测试用例-full.md\" --audit \"D:\\\\cursor_workspace\\\\xmyskills\\\\估值页兼容+CPS+模式测试用例-audit.md\" --template \"D:\\\\cursor_workspace\\\\xmyskills\\\\估值页兼容+CPS+模式测试用例-模板.md\")"
+    ]
+  }
+}
